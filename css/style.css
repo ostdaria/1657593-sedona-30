@@ -1,0 +1,315 @@
+/* Fonts */
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/PTSans.woff2") format("woff2"),
+    url("../fonts/PTSans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/PTSans-Bold.woff2") format("woff2"),
+    url("../fonts/PTSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-white: #FFFFFF;
+
+  --basic-extra-grey: #333333;
+  --basic-dark-grey: #666666; /* rating */
+  --basic-grey: #EEEEEE; /* reason background*/
+  --basic-light-grey: #CACACA; /*triangle*/
+
+  --basic-neutral: #A9A9A9; /* plus minus calendar */
+  --basic-light-silver: #F2F2F2; /* form field rest */
+  --basic-silver: #EBEBEB; /* form field hover */
+  --basic-steel-grey:  #6A6A6A; /* checkbox checked */
+
+  --basic-extra-blue: #5496BD;
+  --basic-blue: #669EC0;
+  --basic-ligth-blue: #81B3D2;
+
+  --basic-extra-brown:  #503E33;
+  --basic-brown: #604E43; /*hotels*/
+  --basic-light-brown: #766357;
+
+}
+
+/* Glodal */
+
+body {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  line-height: 21px;
+  background-color: var(--basic-white);
+
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Logo */
+
+.main-header-logo {
+  position: absolute;
+  width: 138px;
+  height: 70px;
+  left: 571px;
+  top: 0px;
+}
+
+/* Main navigation*/
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: var(--basic-black);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+/* User navigation */
+
+.site-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover {
+  color: var(--basic-ligth-blue);
+}
+.site-navigation a:focus {
+  color: var(--basic-black);
+}
+
+/* Welcome image*/
+
+.welcome-image {
+  width: 1200px;
+  height: 509px;
+  left: 40px;
+  top: 55px;
+  background-image:  url("../img/background-index.jpg");
+  background-color: var(--basic-neutral);
+}
+
+/* Text */
+
+.text-content {
+  line-height: 26px;
+  text-align: center;
+}
+
+.slogan {
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.desc {
+  font-weight: normal;
+  font-size: 14px;
+  color: var(--basic-dark-grey);
+}
+
+/* Features */
+
+.features-list {
+  list-style: none;
+  text-align: center;
+  width: 1200px;
+  height: 256px;
+  left: 40px;
+  top: 1622px;
+  color: var(--basic-extra-grey);
+}
+
+.features-item h3 {
+  font-weight: bold;
+  font-size: 21px;
+  color: var(--basic-black);
+  line-height: 21px;
+}
+
+/* Reason */
+
+.reason {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.city-desc {
+  width: 400px;
+  height: 256px;
+  left: 40px;
+  top: 780px;
+  background-color: var(--basic-ligth-blue);
+  color: var(--basic-white);
+}
+
+.city-title {
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.bridge-desc {
+  width: 400px;
+  height: 256px;
+  left: 840px;
+  top: 1366px;
+  background-color: var(--basic-ligth-blue);
+  color: var(--basic-white);
+}
+
+.bridge-title {
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.reason-list {
+  list-style: none;
+  text-align: center;
+}
+
+.reason-item {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-extra-grey);
+
+}
+
+.reason-title {
+  font-weight: bold;
+  font-size: 21px;
+  color: var(--basic-black);
+}
+
+/* Image */
+
+.city-image,
+.bridge-image {
+  background-color: var(--basic-light-grey);
+}
+
+
+/* Hotel search */
+
+.hotel-search {
+  text-align: center;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.hotel-search-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.button {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  width: 568px;
+  height: 86px;
+  left: 356px;
+  top: 2083px;
+  background-color: var(--basic-light-brown);
+}
+
+.button:hover {
+  background-color: var(--basic-brown);
+
+}
+
+.button:focus {
+  background-color: var(--basic-extra-brown);
+}
+/* Map */
+
+.map-search {
+  width: 1199px;
+  height: 594px;
+  left: 41px;
+  top: 2169px;
+  background-color: var(--basic-neutral);
+}
+
+
+/* Footer */
+
+.main-footer {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px
+}
+
+.footer-phone {
+  color: var(--basic-black);
+}
+
+/* Scoial button */
+
+.footer-social {
+  text-align: center;
+  list-style: none;
+}
+
+.social-button {
+  width: 46px;
+  height: 48px;
+  left: 155px;
+  top: 2820px;
+  background-color: var(--basic-ligth-blue);
+  color: var(--basic-white);
+}
+
+.social-button:hover {
+  background-color: var(--basic-blue);
+}
+
+.social-button:focus {
+  background-color: var(--basic-extra-blue);
+}
+
+/* Footer copyright */
+
+.footer-copyright {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.copyright {
+  color: var(--basic-black);
+}
+
+.copyright:hover {
+  color: var(--basic-blue);
+}
+
+.copyright:focus {
+  color: var(--basic-light-grey);
+}
