@@ -246,7 +246,7 @@ img {
   background-color: var(--basic-brown);
 }
 
-.button:focus {
+.button:active {
   background-color: var(--basic-extra-brown);
 }
 /* Map */
