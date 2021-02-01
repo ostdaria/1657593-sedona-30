@@ -101,6 +101,9 @@ img {
   opacity: 30%;
 }
 
+.site-navigation .link-active {
+  color: var(--basic-brown);
+}
 
 /* Welcome image*/
 
@@ -293,7 +296,7 @@ img {
   background-color: var(--basic-blue);
 }
 
-.social-button:focus {
+.social-button:active {
   background-color: var(--basic-extra-blue);
 }
 
@@ -312,7 +315,6 @@ img {
   color: var(--basic-blue);
 }
 
-.copyright:focus {
+.copyright:active {
   color: var(--basic-light-grey);
 }
-
