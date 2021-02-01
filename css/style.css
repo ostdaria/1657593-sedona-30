@@ -96,9 +96,11 @@ img {
 .site-navigation a:hover {
   color: var(--basic-ligth-blue);
 }
-.site-navigation a:focus {
+.site-navigation a:active {
   color: var(--basic-black);
+  opacity: 30%;
 }
+
 
 /* Welcome image*/
 
@@ -126,7 +128,7 @@ img {
 .desc {
   font-weight: normal;
   font-size: 14px;
-  color: var(--basic-dark-grey);
+  color: var(--basic-extra-grey);
 }
 
 /* Features */
@@ -218,6 +220,7 @@ img {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
+  color: var(--basic-black);
 }
 
 .hotel-search-title {
@@ -241,7 +244,6 @@ img {
 
 .button:hover {
   background-color: var(--basic-brown);
-
 }
 
 .button:focus {
@@ -313,3 +315,4 @@ img {
 .copyright:focus {
   color: var(--basic-light-grey);
 }
+
