@@ -12,7 +12,7 @@
     <link rel="apple-touch-icon" href="img/icon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
-  <body>
+  <body class="page-body">
 
   <header class="main-header">
     <nav class="main-navigation">
@@ -29,10 +29,9 @@
   </header>
 
   <main class="page-catalog container">
-    <section class="filters">
-      <h2>Фильтр</h2>
+    <div class="filters">
       <form class="filter"><!-- Здесь будет форма -->
-        <fieldset>
+        <fieldset class="filter-infrastructure">
           <legend>Инфраструктура:</legend>
           <ul>
             <li></li>
@@ -40,7 +39,7 @@
             <li></li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="filter-housing">
           <legend>Тип жилья:</legend>
           <ul>
             <li></li>
@@ -48,60 +47,80 @@
             <li></li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="filter-price">
           <legend>Стоимость в сутки (Р):</legend>
+          <button class="button-show" type="submit">Показать</button>
         </fieldset>
-        <button type="submit">Показать</button>
       </form>
-    </section>
+    </div>
 
     <div class="option">
       <p class="option-found">Найдено: 3</p>
       <h2 class="page-title">Сортировка:</h2>
-      <ul class="sorting-options">
+      <div class="sorting-options">
         <li><a class="sorting-price" href="#">По цене</a></li>
         <li><a class="sorting-type" href="#">По типу</a></li>
         <li><a class="sorting-rating" href="#">По рейтингу</a></li>
+      </div>
+      <div class="sorting-up-down">
         <li><a class="sorting-ascending"href="#">По возрастанию</a></li>
         <li><a class="sorting-descending"href="#">По убыванию</a></li>
-      </ul>
+      </div>
     </div>
 
     <section class="catalog">
       <h2>Результаты поиска жилья</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <h3><a class="catalog-item-title" href="#">Amara resort&spa</a></h3>
             <div class="image-hotel">
               <img src="img/hotel-amara.jpg" width="135" height="90" alt="Гостиница Amara resort&spa">
             </div>
-            <p class="result-housing-type">Гостиница</p>
-            <p class="result-for-price">От 4000 Р.</p>
-            <a class="button-details" href="#">Подробнее</a>
-            <a class="button-book" href="#">Забронировать</a>
-            <p class="rating">Рейтинг: 8,5</p>
+            <h3><a class="catalog-item-title" href="#">Amara resort&spa</a></h3>
+            <div class="about-housing">
+              <p class="result-housing-type">Гостиница</p>
+              <a class="button-details" href="#">Подробнее</a>
+            </div>
+            <div class="about-price">
+              <p class="result-for-price">От 4000 Р.</p>
+              <a class="button-book" href="#">Забронировать</a>
+            </div>
+            <div class="about-rating">
+              <p class="rating">Рейтинг: 8,5</p>
+            </div>
           </li>
           <li class="catalog-item">
-            <h3><a class="catalog-item-title" href="#">Desert quail inn</a></h3>
             <div class="image-hotel">
               <img src="img/hotel-desert.jpg" width="135" height="90" alt="Гостиница Desert quail inn">
             </div>
-            <p class="result-housing-type">Мотель</p>
-            <p class="result-for-price">От 3000 Р.</p>
-            <a class="button-details" href="#">Подробнее</a>
-            <a class="button-book" href="#">Забронировать</a>
-            <p class="rating">Рейтинг: 8,9</p>
+            <h3><a class="catalog-item-title" href="#">Desert quail inn</a></h3>
+            <div class="about-housing">
+              <p class="result-housing-type">Мотель</p>
+              <a class="button-details" href="#">Подробнее</a>
+            </div>
+            <div class="about-price">
+              <p class="result-for-price">От 3000 Р.</p>
+              <a class="button-book" href="#">Забронировать</a>
+            </div>
+            <div class="about-rating">
+              <p class="rating">Рейтинг: 8,9</p>
+            </div>
           </li>
           <li class="catalog-item">
-            <h3><a class="catalog-item-title" href="#">Villas at poco diablo</a></h3>
             <div class="image-hotel">
               <img src="img/hotel-villas.jpg" width="135" height="90" alt="Гостиница Villas at poco diablo">
             </div>
-            <p class="result-housing-type">Апартаменты</p>
-            <p class="result-for-price">От 2000 Р.</p>
-            <a class="button-details" href="#">Подробнее</a>
-            <a class="button-book" href="#">Забронировать</a>
-            <p class="rating">Рейтинг: 9,2</p>
+            <h3><a class="catalog-item-title" href="#">Villas at poco diablo</a></h3>
+            <div class="about-housing">
+              <p class="result-housing-type">Апартаменты</p>
+              <a class="button-details" href="#">Подробнее</a>
+            </div>
+            <div class="about-price">
+              <p class="result-for-price">От 2000 Р.</p>
+              <a class="button-book" href="#">Забронировать</a>
+            </div>
+            <div class="about-rating">
+              <p class="rating">Рейтинг: 9,2</p>
+            </div>
           </li>
         </ul>
     </section>
@@ -124,11 +143,12 @@
           <a class="social-button youtube" href="#">Ютьюб</a>
         </li>
       </ul>
+      <p class="footer-copyright">
+        Website by
+        <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+      </p>
     </div>
-    <p class="footer-copyright">
-      Website by
-      <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-    </p>
+
   </footer>
   </body>
 </html>
