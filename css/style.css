@@ -93,6 +93,12 @@ img {
 /* Logo */
 
 .main-header-logo {
+  position: absolute;
+  width: 138px;
+  height: 70px;
+  left: 571px;
+  top: 0px;
+
   margin: 0 auto;
   padding: 0;
   outline: 5px solid  rgba(255, 0, 0, 0.3);
@@ -111,8 +117,8 @@ img {
 
   display: grid;
   width: 1200px;
-  margin: 0 auto;
-  padding: 0 10px;
+  margin: 0;
+  padding: 0;
 }
 
 .site-navigation {
@@ -122,6 +128,32 @@ img {
   outline-offset: -5px;
   margin: 0;
   padding: 0;
+
+  display: flex;
+}
+
+.site-navigation > li {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 25%;
+}
+
+.site-navigation a {
+  outline: 5px solid  rgba(0, 17, 255, 0.3);
+  outline-offset: -5px;
+  width: 80px;
+  height: 26px;
+  top: 15px;
+}
+
+.site-navigation li:nth-child(1),
+.site-navigation li:nth-child(2) {
+  text-align: left;
+}
+
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+  text-align: right;
 }
 
 /* Container */
@@ -174,17 +206,31 @@ img {
 
   outline: 5px solid rgba(0, 255, 255 , 0.3);
   outline-offset: -5px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .slogan {
   font-weight: bold;
   font-size: 21px;
+
+  width: 470px;
+  margin: 42.5px 365px 16.5px 365px;
+  padding-bottom: 35px;
+  outline: 5px solid rgba(76, 0, 255, 0.3);
+  outline-offset: -5px;
 }
 
 .desc {
   font-weight: normal;
   font-size: 14px;
   color: var(--basic-extra-grey);
+
+  width: 519px;
+  margin: auto 381px 51px 340px;
+  outline: 5px solid rgba(76, 0, 255, 0.3);
+  outline-offset: -5px;
 }
 
 /* Features */
@@ -201,7 +247,6 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-self: center;
-  column-gap: 10px;
   margin: 0 auto;
   padding: 0;
 }
@@ -209,10 +254,17 @@ img {
 .features-item {
   outline: 5px solid rgba(21, 102, 112, 0.3);
   outline-offset: -5px;
+
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .features-about {
-  margin: 0 30px;
+  margin: 10px 30px;
+  outline: 5px solid rgba(99, 0, 86, 0.3);
+  outline-offset: -5px;
 }
 
 .features-housing,
@@ -222,15 +274,42 @@ img {
   font-size: 21px;
   color: var(--basic-black);
   line-height: 21px;
+
+  outline: 5px solid rgba(99, 0, 86, 0.3);
+  outline-offset: -5px;
 }
 
-/* Reason */
-
-.reason {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
+.features-housing {
+  width: 68px;
+  margin: 25px 347px auto 165px;
 }
+
+.features-food {
+  width: 39px;
+  margin: 25px 330px auto 185px ;
+}
+
+.features-souvenirs {
+  width: 103px;
+  margin: 25px 148px auto 155px;
+}
+
+.housing {
+  width: 254px;
+  margin: 25px 62px 82px 73px;
+}
+
+.food {
+  width: 297px;
+  margin: 25px 59px 82px 62px;
+}
+
+.souvenirs {
+  width: 269px;
+  margin: 25px 65px 82px 70px;
+}
+
+
 
 /* City */
 
@@ -254,6 +333,10 @@ img {
 
   outline: 5px solid rgba(255, 196, 0, 0.3);
   outline-offset: -5px;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .city-image {
@@ -264,6 +347,24 @@ img {
 .city-title {
   font-weight: bold;
   font-size: 21px;
+  width: 122px;
+  outline: 5px solid rgba(0, 17, 255, 0.3);
+  outline-offset: -5px;
+  margin: 47px 139px 12px 139px;
+}
+
+.city-number {
+  width: 51px;
+  margin: 13px 174px 12px 175px;
+  outline: 5px solid rgba(0, 17, 255, 0.3);
+  outline-offset: -5px;
+}
+
+.city-about {
+  width: 297px;
+  margin: 11px 51px auto 52px;
+  outline: 5px solid rgba(0, 17, 255, 0.3);
+  outline-offset: -5px;
 }
 
 /* Bridge */
@@ -288,6 +389,10 @@ img {
 
   outline: 5px solid rgba(255, 196, 0, 0.3);
   outline-offset: -5px;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .bridge-image {
@@ -298,6 +403,33 @@ img {
 .bridge-title {
   font-weight: bold;
   font-size: 21px;
+  outline: 5px solid rgba(0, 17, 255, 0.3);
+  outline-offset: -5px;
+
+  width: 150px;
+  margin: 50px 135px 12px 126px;
+}
+
+.bridge-number {
+  width: 51px;
+  margin: 13px 174px 12px 175px;
+  outline: 5px solid rgba(0, 17, 255, 0.3);
+  outline-offset: -5px;
+}
+
+.bridge-about {
+  width: 301px;
+  margin: 11px 49px auto 50px;
+  outline: 5px solid rgba(0, 17, 255, 0.3);
+  outline-offset: -5px;
+}
+
+/* Reason */
+
+.reason {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .reason-list {
@@ -308,9 +440,8 @@ img {
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 10px;
   justify-self: center;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   outline: 5px solid rgba(217, 255, 0, 0.3);
   outline-offset: -5px;
@@ -325,12 +456,60 @@ img {
   outline: 5px solid rgba(255, 38, 0, 0.3);
   outline-offset: -5px;
 
+  display: flex;
+  flex-direction: column;
+  width: 400px;
 }
 
 .reason-title {
   font-weight: bold;
   font-size: 21px;
   color: var(--basic-black);
+
+  outline: 5px solid rgba(255, 38, 0, 0.3);
+  outline-offset: -5px;
+}
+
+.reason-number{
+  outline: 5px solid rgba(255, 38, 0, 0.3);
+  outline-offset: -5px;
+  width: 51px;
+  margin: 13px 175px 12px 170px;
+}
+
+.reason-about {
+  outline: 5px solid rgba(255, 38, 0, 0.3);
+  outline-offset: -5px;
+}
+
+.area {
+  width: 119px;
+  margin: 47px 146px 12px 140px;
+}
+
+.about-area {
+  width: 207px;
+  margin: 12px 107px 54px 104px;
+}
+
+.road {
+  width: 99px;
+  margin: 47px 150px 12px 146px;
+}
+
+.about-road {
+  width: 258px;
+  margin: 12px 71px 54px 75px ;
+}
+
+.tourist {
+  width: 98px;
+  margin: 47px 151px 12px 150px;
+}
+
+.about-tourist {
+  width: 246px;
+  margin: 12px 85px 54px 82px;
 }
 
 /* Image */
@@ -351,11 +530,28 @@ img {
 
   outline: 5px solid rgba(255, 38, 0, 0.3);
   outline-offset: -5px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .hotel-search-title {
   font-size: 30px;
   font-weight: bold;
+
+  width: 297px;
+  margin: 58px 492px 4px 462px;
+  outline: 5px solid rgba(255, 38, 0, 0.3);
+  outline-offset: -5px;
+}
+
+.hotel-search-info {
+  width: 435px;
+  margin: auto 412px 24px 415px;
+  padding-top: 41px;
+  padding-bottom: 27px;
+  outline: 5px solid rgba(255, 38, 0, 0.3);
+  outline-offset: -5px;
 }
 
 .button {
@@ -367,8 +563,11 @@ img {
   color: var(--basic-white);
   width: 568px;
   height: 86px;
-  left: 356px;
-  top: 2083px;
+  margin: auto 341px 0px 343px;
+  outline: 5px solid rgba(255, 38, 0, 0.3);
+  outline-offset: -5px;
+
+
   background-color: var(--basic-light-brown);
 }
 
