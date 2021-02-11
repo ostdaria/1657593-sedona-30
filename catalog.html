@@ -31,124 +31,133 @@
   <main class="page-catalog container">
     <div class="filters">
       <form class="filter"><!-- Здесь будет форма -->
-        <fieldset class="filter-infrastructure">
-          <legend>Инфраструктура:</legend>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </fieldset>
-        <fieldset class="filter-housing">
-          <legend>Тип жилья:</legend>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </fieldset>
-        <fieldset class="filter-price">
-          <legend>Стоимость в сутки (Р):</legend>
+        <div class="filter-infrastructure">
+          <p class="filter-infrastructure-title">Инфраструктура:</p>
+          <label class="filter-option">Бассейн</label>
+          <label class="filter-option">Парковка</label>
+          <label class="filter-option">Wi-fi</label>
+        </div>
+        <div class="filter-housing">
+          <p class="filter-housing-title">Тип жилья:</p>
+          <label class="filter-option">Гостиница</label>
+          <label class="filter-option">Мотель</label>
+          <label class="filter-option">Апартаменты</label>
+        </div>
+        <div class="filter-price">
+          <p class="filter-price-title">Стоимость в сутки (Р):</p>
           <button class="button-show" type="submit">Показать</button>
-        </fieldset>
+        </div>
       </form>
     </div>
 
     <div class="option">
-      <p class="option-found">Найдено: 3</p>
-      <h2 class="page-title">Сортировка:</h2>
       <div class="sorting-options">
-        <li><a class="sorting-price" href="#">По цене</a></li>
-        <li><a class="sorting-type" href="#">По типу</a></li>
-        <li><a class="sorting-rating" href="#">По рейтингу</a></li>
+        <p class="option-found">Найдено: 3</p>
+        <h2 class="page-title">Сортировка:</h2>
+        <a class="sorting-price" href="#">По цене</a>
+        <a class="sorting-type" href="#">По типу</a>
+        <a class="sorting-rating" href="#">По рейтингу</a>
       </div>
       <div class="sorting-up-down">
-        <li><a class="sorting-ascending"href="#">По возрастанию</a></li>
-        <li><a class="sorting-descending"href="#">По убыванию</a></li>
+        <a class="sorting-ascending"href="#">воз</a>
+        <a class="sorting-descending"href="#">уб</a>
       </div>
     </div>
 
-    <section class="catalog">
-      <h2>Результаты поиска жилья</h2>
-        <ul class="catalog-list">
-          <li class="catalog-item">
-            <div class="image-hotel">
-              <img src="img/hotel-amara.jpg" width="135" height="90" alt="Гостиница Amara resort&spa">
-            </div>
+    <div class="catalog">
+      <div class="catalog-list">
+        <div class="catalog-item">
+          <div class="image-hotel">
+            <img src="img/hotel-amara.jpg" width="135" height="90" alt="Гостиница Amara resort&spa">
+          </div>
+          <div class="infoblock">
             <h3><a class="catalog-item-title" href="#">Amara resort&spa</a></h3>
-            <div class="about-housing">
-              <p class="result-housing-type">Гостиница</p>
-              <a class="button-details" href="#">Подробнее</a>
+            <div class="info">
+              <div class="about-housing">
+                <p class="result-housing-type">Гостиница</p>
+                <a class="button-details" href="#">Подробнее</a>
+              </div>
+              <div class="about-price">
+                <p class="result-for-price">От 4000 Р.</p>
+                <a class="button-book" href="#">Забронировать</a>
+              </div>
             </div>
-            <div class="about-price">
-              <p class="result-for-price">От 4000 Р.</p>
-              <a class="button-book" href="#">Забронировать</a>
-            </div>
-            <div class="about-rating">
-              <p class="rating">Рейтинг: 8,5</p>
-            </div>
-          </li>
-          <li class="catalog-item">
-            <div class="image-hotel">
-              <img src="img/hotel-desert.jpg" width="135" height="90" alt="Гостиница Desert quail inn">
-            </div>
+          </div>
+          <div class="about-rating">
+            <div class="rating-stars"></div>
+            <p class="rating">Рейтинг: 8,5</p>
+          </div>
+        </div>
+        <div class="catalog-item">
+          <div class="image-hotel">
+            <img src="img/hotel-desert.jpg" width="135" height="90" alt="Гостиница Desert quail inn">
+          </div>
+          <div class="infoblock">
             <h3><a class="catalog-item-title" href="#">Desert quail inn</a></h3>
-            <div class="about-housing">
-              <p class="result-housing-type">Мотель</p>
-              <a class="button-details" href="#">Подробнее</a>
+            <div class="info">
+              <div class="about-housing">
+                <p class="result-housing-type">Мотель</p>
+                <a class="button-details" href="#">Подробнее</a>
+              </div>
+              <div class="about-price">
+                <p class="result-for-price">От 3000 Р.</p>
+                <a class="button-book" href="#">Забронировать</a>
+              </div>
             </div>
-            <div class="about-price">
-              <p class="result-for-price">От 3000 Р.</p>
-              <a class="button-book" href="#">Забронировать</a>
-            </div>
-            <div class="about-rating">
-              <p class="rating">Рейтинг: 8,9</p>
-            </div>
-          </li>
-          <li class="catalog-item">
-            <div class="image-hotel">
-              <img src="img/hotel-villas.jpg" width="135" height="90" alt="Гостиница Villas at poco diablo">
-            </div>
+          </div>
+          <div class="about-rating">
+            <div class="rating-stars"></div>
+            <p class="rating">Рейтинг: 8,9</p>
+          </div>
+        </div>
+        <div class="catalog-item">
+          <div class="image-hotel">
+            <img src="img/hotel-villas.jpg" width="135" height="90" alt="Гостиница Villas at poco diablo">
+          </div>
+          <div class="infoblock">
             <h3><a class="catalog-item-title" href="#">Villas at poco diablo</a></h3>
-            <div class="about-housing">
-              <p class="result-housing-type">Апартаменты</p>
-              <a class="button-details" href="#">Подробнее</a>
+            <div class="info">
+              <div class="about-housing">
+                <p class="result-housing-type">Апартаменты</p>
+                <a class="button-details" href="#">Подробнее</a>
+              </div>
+              <div class="about-price">
+                <p class="result-for-price">От 2000 Р.</p>
+                <a class="button-book" href="#">Забронировать</a>
+              </div>
             </div>
-            <div class="about-price">
-              <p class="result-for-price">От 2000 Р.</p>
-              <a class="button-book" href="#">Забронировать</a>
-            </div>
-            <div class="about-rating">
-              <p class="rating">Рейтинг: 9,2</p>
-            </div>
-          </li>
-        </ul>
-    </section>
+          </div>
+          <div class="about-rating">
+            <div class="rating-stars"></div>
+            <p class="rating">Рейтинг: 9,2</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer class="main-footer">
     <div class="contacts">
-      <p class="footer-contacts">
-        #Visitsedona
-        ТЕЛ: <a class="footer-phone" href="tel:+7(495)6660166">+7(495)666-01-66</a>
-      </p>
+      <div class="footer-contacts">
+        <p class="hashtag">#Visitsedona</p>
+        <p class="phone">ТЕЛ: <a class="footer-phone" href="tel:+7(495)6660166">+7(495)666-01-66</a></p>
+      </div>
       <ul class="footer-social">
         <li>
-          <a class="social-button twitter" href="#">Твиттер</a>
+          <a class="social-button twitter" href="#">Тви</a>
         </li>
         <li>
-          <a class="social-button facebook" href="#">Фейсбук</a>
+          <a class="social-button facebook" href="#">Фей</a>
         </li>
         <li>
-          <a class="social-button youtube" href="#">Ютьюб</a>
+          <a class="social-button youtube" href="#">Ют</a>
         </li>
       </ul>
-      <p class="footer-copyright">
-        Website by
+      <div class="footer-copyright">
+        <p class="footer-copyright-introduction">Website by</p>
         <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-      </p>
+      </div>
     </div>
-
   </footer>
   </body>
 </html>
