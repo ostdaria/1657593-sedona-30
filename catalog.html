@@ -54,20 +54,30 @@
       <div class="sorting-options">
         <p class="option-found">Найдено: 3</p>
         <h2 class="page-title">Сортировка:</h2>
-        <a class="sorting-price" href="#">По цене</a>
-        <a class="sorting-type" href="#">По типу</a>
-        <a class="sorting-rating" href="#">По рейтингу</a>
+        <a class="sorting sorting-active" href="#">По цене</a>
+        <a class="sorting" href="#">По типу</a>
+        <a class="sorting" href="#">По рейтингу</a>
       </div>
       <div class="sorting-up-down">
-        <a class="sorting-ascending"href="#">воз</a>
-        <a class="sorting-descending"href="#">уб</a>
+        <a class="sorting-ascending" href="#">
+          <span class="visually-hidden">По возрастанию</span>
+          <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
+          </svg>
+        </a>
+        <a class="sorting-descending" href="#">
+          <span class="visually-hidden">По убыванию</span>
+          <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.5 10L0 0H11" fill="#81B3D2"/>
+          </svg>
+        </a>
       </div>
     </div>
 
     <section class="catalog">
       <h2 class="visually-hidden">Сортировка</h2>
-      <div class="catalog-list">
-        <div class="catalog-item">
+      <ul class="catalog-list">
+        <li class="catalog-item">
           <div class="image-hotel">
             <img src="img/hotel-amara.jpg" width="135" height="90" alt="Гостиница Amara resort&spa">
           </div>
@@ -88,8 +98,8 @@
             <div class="rating-stars"></div>
             <p class="rating">Рейтинг: 8,5</p>
           </div>
-        </div>
-        <div class="catalog-item">
+        </li>
+        <li class="catalog-item">
           <div class="image-hotel">
             <img src="img/hotel-desert.jpg" width="135" height="90" alt="Гостиница Desert quail inn">
           </div>
@@ -110,8 +120,8 @@
             <div class="rating-stars"></div>
             <p class="rating">Рейтинг: 8,9</p>
           </div>
-        </div>
-        <div class="catalog-item">
+        </li>
+        <li class="catalog-item">
           <div class="image-hotel">
             <img src="img/hotel-villas.jpg" width="135" height="90" alt="Гостиница Villas at poco diablo">
           </div>
@@ -132,8 +142,8 @@
             <div class="rating-stars"></div>
             <p class="rating">Рейтинг: 9,2</p>
           </div>
-        </div>
-      </div>
+        </li>
+      </ul>
     </section>
   </main>
 
