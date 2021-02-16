@@ -44,6 +44,7 @@
 
   --basic-low-opacity: rgba(0, 0, 0, 0.3);
   --basic-white-opacity: rgba(255,255,255, 0.3);
+  --basic-black-opacity: rgba(0, 1, 1, 0.2);
 }
 
 /* Glodal */
@@ -56,14 +57,14 @@
   text-transform: uppercase;
   color: var(--basic-black);
   line-height: 21px;
-  background-color: var(--basic-white);
+  background-color: var(--basic-grey);
 
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
 
-  box-shadow: 0px 0px 10px 2px var(--basic-light-grey);
+  /*box-shadow: 0px 0px 10px 2px var(--basic-light-grey);*/
 }
 
 a {
@@ -89,7 +90,8 @@ img {
   justify-self: center;
   margin: 0 auto;
   padding: 0;
-
+  background-color: var(--basic-white);
+  box-shadow: 0px 5px 15px var(--basic-black-opacity);
 }
 
 /* Logo */
@@ -153,6 +155,8 @@ img {
   width: 1200px;
   margin: 0 auto;
   padding: 0;
+  box-shadow: 0px 5px 15px var(--basic-black-opacity);
+  background-color: var(--basic-white);
 }
 
 /* User navigation */
@@ -209,6 +213,7 @@ img {
   padding-right: 341px;
   padding-bottom: 51px;
   padding-left: 340px;
+  background-color: var(--basic-white);
 }
 
 .slogan {
@@ -235,6 +240,7 @@ img {
   text-align: center;
   width: 1200px;
   color: var(--basic-extra-grey);
+  background-color: var(--basic-white);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-self: center;
@@ -567,6 +573,7 @@ img {
   font-size: 14px;
   line-height: 24px;
   color: var(--basic-extra-grey);
+  background-color: var(--basic-white);
   display: flex;
   flex-direction: column;
   padding-top: 58px;
@@ -634,6 +641,7 @@ img {
   font-size: 21px;
   line-height: 26px;
   background-color: var(--basic-white);
+  box-shadow: 0px 5px 15px var(--basic-black-opacity);
   width: 1200px;
   margin: 0 auto;
   padding: 0;
@@ -777,8 +785,6 @@ img {
   text-transform: uppercase;
   color: var(--basic-white);
   background-image: url("../img/background-catalog.jpg");
-  outline: 5px solid rgba(255, 0, 128, 0.7);
-  outline-offset: -5px;
 }
 
 .filter {
