@@ -691,6 +691,7 @@ img {
 .hotel-search-item.arrival-data input,
 .hotel-search-item.depature-data input {
   padding-left: 13px;
+  border: 2px solid transparent;
 }
 
 .hotel-search-item.arrival-data input:hover,
@@ -729,11 +730,10 @@ img {
 .calendar {
   position: absolute;
   right: 15px;
+  top: 6.5px;
   border: none;
   outline: none;
   background-color: var(--basic-light-silver);
-  padding-top: 7px;
-  padding-bottom: 5px;
 }
 
 .calendar:hover path {
