@@ -278,10 +278,6 @@ img {
   padding-left: 65px;
 }
 
-.features-about {
-
-}
-
 .features-housing,
 .features-food,
 .features-souvenirs {
@@ -514,9 +510,6 @@ img {
   color: var(--basic-black);
 }
 
-.reason-number{
-}
-
 .reason-about {
   margin: 0px;
 }
@@ -635,8 +628,7 @@ img {
 .map-search {
   position: relative;
   overflow: hidden;
-  width: 1199px;
-  height: 594px;
+  width: 1200px;
   background-color: var(--basic-light-silver);
 }
 
@@ -684,40 +676,36 @@ img {
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 29px;
-
 }
 
 .hotel-search-item input::placeholder {
   color: var(--basic-black);
 }
 
-.hotel-search-item.arrival-data input,
-.hotel-search-item.depature-data input {
+.arrival-data input,
+.depature-data input {
   padding-left: 13px;
   border: 2px solid transparent;
 }
 
-.hotel-search-item.arrival-data input:hover,
-.hotel-search-item.depature-data input:hover {
+.arrival-data input:hover,
+.depature-data input:hover {
   background-color: var(--basic-silver);
 }
 
-#label-arrival-data:hover + .calendar,
-#label-depature-data:hover + .calendar{
+.input-data:hover + .calendar {
   background-color: var(--basic-silver);
 }
 
-.hotel-search-item .arrival input:focus,
-.hotel-search-item .depature input:focus {
+ .arrival input:focus,
+ .depature input:focus {
   background-color: var(--basic-white);
   border: 2px solid var(--basic-creamy-grey);
 }
 
-#label-arrival-data:focus + .calendar,
-#label-depature-data:focus + .calendar {
+.input-data:focus + .calendar {
   background-color: var(--basic-white);
 }
-
 
 .label-arrival-data,
 .label-depature-data {
@@ -764,7 +752,7 @@ img {
   margin-left: 0px;
 }
 
-.hotel-search-item.column input{
+.column input{
   width: 85px;
   height: 38px;
   text-align: center;
@@ -792,7 +780,6 @@ img {
   margin-right: 18px;
 }
 
-
 .info-grown {
   position: relative;
 }
@@ -800,7 +787,6 @@ img {
 .info-child {
   position: relative;
 }
-
 
 .button-increase,
 .button-reduce {
@@ -872,7 +858,6 @@ img {
 }
 
 .footer {
-  margin-top: 0px;
   position: relative;
   top: 0px;
 }
@@ -890,6 +875,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-self: center;
+  text-align: center;
   flex-direction: column;
 }
 
@@ -954,6 +940,7 @@ img {
   justify-content: end;
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .footer-copyright:hover path {
@@ -1167,7 +1154,7 @@ img {
   font-size: inherit;
 }
 
-.price-controls .min-price input {
+.min-price input {
   width: 10px;
 }
 
@@ -1265,9 +1252,6 @@ img {
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
-
-
-
 
 /* Sortings */
 
@@ -1380,6 +1364,10 @@ img {
 
 /* Catalog */
 
+.catalog {
+  font-size: 0px;
+}
+
 .catalog-list {
   list-style: none;
   align-items: center;
@@ -1396,11 +1384,6 @@ img {
   padding: 30px 73px 30px 73px;
   border-bottom: 1px solid var(--basic-light-silver);
 }
-
-.catalog-item:nth-child(1) {
-  margin-top: -15px;
-}
-
 
 .infoblock {
   display: flex;
