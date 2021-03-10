@@ -125,14 +125,35 @@ img {
   list-style: none;
   margin: 0;
   display: flex;
-  flex-wrap: wrap;
-  padding: 14px 71px;
+  padding: 14px 72px;
 }
 
+
 .site-navigation > li {
+  flex-basis: 230px;
+}
+
+.site-navigation li:nth-child(1),
+.site-navigation li:nth-child(2) {
+  text-align: left;
+}
+
+.site-navigation li:nth-child(2) {
+  margin-right: 138px;
+}
+
+
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+  text-align: right;
+}
+
+/*
+.site-navigation > li {
+  width: 228px;
   flex-grow: 1;
   flex-shrink: 1;
-  flex-basis: 25%;
+  flex-basis: 15%;
 }
 
 .site-navigation a {
@@ -149,12 +170,15 @@ img {
 .site-navigation li:nth-child(4) {
   text-align: right;
 }
+*/
+
+
+
 
 /* Container */
 
 .container {
   position: relative;
-  z-index: 0;
   width: 1200px;
   padding: 0;
   background-color: var(--basic-white);
@@ -623,15 +647,6 @@ img {
   color: var(--basic-white-opacity);
 }
 
-/* Map */
-
-.map-search {
-  position: relative;
-  overflow: hidden;
-  width: 1200px;
-  background-color: var(--basic-light-silver);
-}
-
 /* Form */
 
 .hotel-search-form {
@@ -841,34 +856,48 @@ img {
   background-color: var(--basic-extra-blue);
 }
 
+/* Map */
+
+.footer-map {
+  overflow: hidden;
+  width: 1200px;
+  background-color: var(--basic-light-silver);
+  z-index: -1;
+}
+
+.iframe-map {
+  border: none;
+}
+
 /* Main footer */
 
 .main-footer {
-  position: absolute;
-  font-size: 0;
-  top: 2627px;
+  position: relative;
   width: 1200px;
+  padding: 0;
+}
+
+.footer-content-absolute {
+  position: absolute;
+  z-index: 0;
+  bottom: 0px;
+}
+
+.main-footer .footer-content {
   font-style: normal;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  background-color: var(--basic-light-white);
-  background-position: 0 0;
-  padding: 0;
-}
-
-.footer {
-  position: relative;
-  top: 0px;
-}
-
-.main-footer .contacts {
   display: flex;
   justify-content: space-between;
-  padding-top: 23px;
-  padding-right: 111px;
-  padding-bottom: 15px;
+  padding-top: 22px;
+  padding-right: 139px;
+  padding-bottom: 13px;
   padding-left: 111px;
+  background-color: var(--basic-light-white);
+  background-position: 0 0;
+  width: 950px;
+  /* height: 78px; */
 }
 
 .footer-contacts {
@@ -996,12 +1025,15 @@ img {
 
 .filters {
   width: 1200px;
+  min-height: 100%;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   color: var(--basic-white);
   background-image: url("../img/background-catalog.jpg");
+  background-color: var(--basic-dark-grey);
+  background-size: cover;
 }
 
 .filter {
@@ -1036,30 +1068,42 @@ img {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin: 0px 150px 0px 0px;
+  margin: 0px 120px 0px 0px;
 }
 
 .filter-housing {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin: 0px 288px 0px 0px;
+  margin: 0px 343px 0px 0px;
 }
 
 .filter-option {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .filter-option:hover path {
   fill: var(--basic-white);
 }
 
+/*
+.filter-option:nth-child(1),
+.filter-option:nth-child(2) {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 23px;
+}
+*/
+
+
 .filter-label {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 }
 
 .filter-label .title-checkmark {
@@ -1074,6 +1118,15 @@ img {
   background-repeat: no-repeat;
 }
 
+/*
+.filter-option input:focus ~ .checkmark{
+  border: 2px solid red;
+}
+
+.filter-option input:active ~ .checkmark{
+  border: 2px solid transparent;
+}
+*/
 .filter-option input:checked ~ .checkmark {
   width: 27px;
   height: 23px;
@@ -1117,7 +1170,7 @@ img {
 
 .price-controls {
   position: relative;
-  width: 342px;
+  width: 317px;
   height: 36px;
   display: flex;
   background-color: transparent;
@@ -1145,7 +1198,7 @@ img {
 }
 
 .price-controls input {
-  width: 50px;
+  width: 34px;
   padding-top: 2.5px;
   text-align: center;
   background-color: transparent;
@@ -1183,14 +1236,14 @@ img {
   position: relative;
   top: 31px;
   height: 80px;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
 }
 
 .range-controls .scale {
   height: 2px;
-  width: 330px;
+  width: 316px;
   background: var( --basic-grey-medium);
-  margin-left: 14px;
+  margin-left: 0px;
 }
 
 .range-controls .bar {
@@ -1242,7 +1295,7 @@ img {
   color: var(--basic-white);
   text-transform: uppercase;
   align-items: center;
-  margin: -33px 95px 0px 95px;
+  margin: -33px 82px 0px 126px;
   background-color: transparent;
   border-radius: 2px;
   border: 2px solid var(--basic-white);
@@ -1313,7 +1366,7 @@ img {
 
 .sorting:active {
   color: var(--basic-black);
-  border-bottom: none;
+  border-bottom-color: transparent;
 }
 
 .sorting-up-down {
