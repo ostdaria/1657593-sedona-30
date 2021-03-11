@@ -636,6 +636,7 @@ img {
   border: 0px solid var(--basic-light-brown);
   margin: 0px;
   outline: none;
+  z-index: 2;
 }
 
 .button:hover {
@@ -647,11 +648,13 @@ img {
   color: var(--basic-white-opacity);
 }
 
+
+
 /* Form */
 
 .hotel-search-form {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   width: 458px;
   height: 300px;
   top: 2100px;
@@ -667,6 +670,15 @@ img {
   flex-direction: column;
   flex-wrap: wrap;
   padding: 55px;
+}
+
+.hotel-search-form-hide {
+  display: none;
+}
+
+.hotel-search-form-show {
+  display: flex;
+  animation: bounce 0.6s;
 }
 
 .hotel-search-item {
@@ -835,7 +847,7 @@ img {
   position: absolute;
   width: 458px;
   height: 58px;
-  transform: translateY(240px);
+  bottom: 58px;
   font-size: 21px;
   font-weight: bold;
   text-transform: uppercase;
@@ -855,6 +867,27 @@ img {
   color: var(--basic-white-opacity);
   background-color: var(--basic-extra-blue);
 }
+
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* @keyframes hide {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-200px);
+  }
+} */
+
 
 /* Map */
 
@@ -892,7 +925,7 @@ img {
   justify-content: space-between;
   padding-top: 22px;
   padding-right: 139px;
-  padding-bottom: 13px;
+  padding-bottom: 15px;
   padding-left: 111px;
   background-color: var(--basic-light-white);
   background-position: 0 0;
@@ -1118,15 +1151,11 @@ img {
   background-repeat: no-repeat;
 }
 
-/*
-.filter-option input:focus ~ .checkmark{
-  border: 2px solid red;
+.filter-option input:focus ~ .checkmark {
+  border: 1px solid var(--basic-black);
+  border-radius: 2px;
 }
 
-.filter-option input:active ~ .checkmark{
-  border: 2px solid transparent;
-}
-*/
 .filter-option input:checked ~ .checkmark {
   width: 27px;
   height: 23px;
