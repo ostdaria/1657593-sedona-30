@@ -91,10 +91,14 @@ a {
 }
 
 img {
+  /* position: absolute; */
+  /* top: 0; */
+  left: auto;
   max-width: 100%;
   height: auto;
   /* margin-top: -1px; */
   /* border: none; */
+  /* position: absolute; */
 }
 
 /* Main header */
@@ -138,6 +142,7 @@ img {
   margin: 0;
   display: flex;
   padding: 15px 72px;
+  /* width: 56px; */
 }
 
 
@@ -217,6 +222,7 @@ img {
 /* Welcome image*/
 
 .welcome-image {
+  /* position: absolute; */
   height: 432px;
   background-image: url("../img/background-index.jpg");
   background-repeat: no-repeat;
@@ -249,7 +255,7 @@ img {
   flex-direction: column;
   padding-top: 43px;
   padding-right: 339px;
-  padding-bottom: 51px;
+  padding-bottom: 52px;
   padding-left: 340px;
   background-color: var(--basic-white);
   /* height: 216px; */
@@ -270,7 +276,7 @@ img {
   font-weight: normal;
   font-size: 14px;
   color: var(--basic-extra-grey);
-  margin: 0px 0px 0px -3px;
+  margin: 0px 0px 0px -1px;
 }
 
 
@@ -314,7 +320,7 @@ img {
 .features-item:nth-child(3) {
   padding-top: 55px;
   padding-right: 65px;
-  padding-bottom: 82px;
+  padding-bottom: 80px;
   padding-left: 65px;
 }
 
@@ -342,8 +348,8 @@ img {
   position: absolute;
   width: 75px;
   height: 72px;
-  top: -98px;
-  left: 0px;
+  top: -99px;
+  left: 1px;
   background-image: url("../img/icon-house.svg");
   background-repeat: no-repeat;
   background-position: 0px 0px;
@@ -367,7 +373,7 @@ img {
   width: 75px;
   height: 70px;
   top: -98px;
-  left: -16px;
+  left: -15px;
   background-image: url("../img/icon-burger.svg");
   background-repeat: no-repeat;
   background-position: 0px 0px;
@@ -390,8 +396,8 @@ img {
   position: absolute;
   width: 64px;
   height: 77px;
-  top: -103px;
-  left: 19px;
+  top: -104px;
+  left: 20px;
   background-image: url("../img/icon-gift.svg");
   background-repeat: no-repeat;
 }
@@ -414,7 +420,7 @@ img {
 .city-desc {
   background-color: var(--basic-ligth-blue);
   color: var(--basic-white);
-  padding-top: 47px;
+  padding-top: 46px;
   padding-right: 46px;
   padding-bottom: 52px;
   padding-left: 52px;
@@ -430,7 +436,7 @@ img {
   margin-top: 0px;
   margin-bottom: 25px;
   margin-right: 90px;
-  margin-left: 86px;
+  margin-left: 87px;
   font-style: normal;
   line-height: 22px;
 }
@@ -439,7 +445,7 @@ img {
   width: 52px;
   font-size: 14px;
   margin-top: 0px;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   margin-right: 123px;
   margin-left: 122px;
   font-style: normal;
@@ -447,7 +453,7 @@ img {
 
 .city-about {
   width: 297px;
-  /* line-height: 21px; */
+  line-height: 21px;
   margin: 0px;
 }
 
@@ -545,21 +551,21 @@ h3.bridge-title {}
   padding-top: 47px;
   padding-right: 96px;
   padding-bottom: 55px;
-  padding-left: 95px;
+  padding-left: 94px;
 }
 
 .reason-item:nth-child(2) {
-  padding-top: 47px;
+  padding-top: 46px;
   padding-right: 71px;
   padding-bottom: 54px;
-  padding-left: 70px;
+  padding-left: 68px;
 }
 
 .reason-item:nth-child(3) {
-  padding-top: 47px;
+  padding-top: 48px;
   padding-right: 77px;
   padding-bottom: 54px;
-  padding-left: 76px;
+  padding-left: 75px;
 }
 
 .reason-title {
@@ -588,19 +594,21 @@ h3.bridge-title {}
   font-size: 21px;
   margin-top: 0px;
   margin-right: 80px;
-  margin-bottom: 23px;
-  margin-left: 81px;
+  margin-bottom: 24px;
+  margin-left: 82px;
   line-height: 22px;
 }
 
 .reason-title.tourist {
   margin-top: -2px;
   margin-right: 73px;
-  margin-bottom: 25px;
-  margin-left: 71px;
+  margin-bottom: 24px;
+  margin-left: 73px;
   font-size: 21px;
   line-height: 22px;
-  /* letter-spacing: 1px; */
+  /* letter-spacing: -1px; */
+  /* width: 43px; */
+  /* text-align: center; */
 }
 
 .number-area {
@@ -608,7 +616,7 @@ h3.bridge-title {}
   margin-top: 0px;
   margin-right: 80px;
   margin-bottom: 22px;
-  margin-left: 78px;
+  margin-left: 80px;
 }
 
 .number-road {
@@ -616,7 +624,7 @@ h3.bridge-title {}
   margin-top: 0px;
   margin-right: 104px;
   margin-bottom: 22px;
-  margin-left: 103px;
+  margin-left: 105px;
 }
 
 .number-tourist {
@@ -645,7 +653,7 @@ h3.bridge-title {}
   background-color: var(--basic-white);
   display: flex;
   flex-direction: column;
-  padding-top: 59px;
+  padding-top: 58px;
   padding-right: 316px;
   padding-bottom: 0px;
   padding-left: 316px;
@@ -664,14 +672,14 @@ h3.bridge-title {}
 .hotel-search-info {
   margin-top: 0px;
   margin-right: 66px;
-  margin-bottom: 23px;
+  margin-bottom: 24px;
   margin-left: 66px;
   width: 435px;
-  margin-bottom: 1px;
+  margin-bottom: 2px;
 }
 
 .hotel-search-info-add {
-  margin: 0px 0px 43px 0px;
+  margin: -1px -2px 43px 0px;
 }
 
 
@@ -708,7 +716,7 @@ h3.bridge-title {}
   position: absolute;
   z-index: 1;
   width: 458px;
-  height: 287px;
+  height: 288px;
   top: 2100px;
   font-weight: bold;
   font-size: 14px;
@@ -791,12 +799,12 @@ h3.bridge-title {}
 }
 
 .label-depature-data {
-  padding-top: 9px;
+  padding-top: 8px;
 }
 
 .label-info-child,
 .label-info-grown  {
-  padding-top: 5px;
+  padding-top: 4px;
 }
 
 .arrival-data input {
@@ -836,7 +844,7 @@ h3.bridge-title {}
 }
 
 .column input{
-  width: 85px;
+  width: 86px;
   height: 38px;
   text-align: center;
   align-items: center;
@@ -883,11 +891,11 @@ h3.bridge-title {}
 
 .button-increase {
   top: 10px;
-  right: 7px;
+  right: 6px;
 }
 
 .button-reduce {
-  top: 7px;
+  top: 6px;
   right: 81px;
 }
 
@@ -1156,7 +1164,7 @@ h3.bridge-title {}
   padding-top: 26.5px;
   padding-right: 72px;
   padding-bottom: 19px;
-  padding-left: 71px;
+  padding-left: 72px;
   /* width: 1200px; */
 }
 
@@ -1409,6 +1417,7 @@ h3.bridge-title {}
 .range-controls .toggle-min {
   top: -9px;
   left: 0px;
+  left: 3px;
 }
 
 .range-controls .toggle-max {
@@ -1419,7 +1428,7 @@ h3.bridge-title {}
 .button-show {
   position: absolute;
   top: 185px;
-  left: 772px;
+  left: 773px;
   width: 137px;
   height: 36px;
   color: var(--basic-white);
@@ -1520,9 +1529,9 @@ h3.bridge-title {}
   margin-left: 383px;
   /* margin-left: auto; */
   padding-top: 37px;
-  padding-right: 74px;
+  padding-right: 73px;
   padding-bottom: 30px;
-  padding-left: 72px;
+  padding-left: 73px;
 }
 
 .sorting-ascending {
@@ -1573,7 +1582,7 @@ h3.bridge-title {}
   line-height: 21px;
   display: flex;
   flex-wrap: wrap;
-  padding: 31px 73px 30px 72px;
+  padding: 31px 73px 30px 73px;
   border-bottom: 1px solid var(--basic-creamy-grey);
 }
 
@@ -1611,11 +1620,11 @@ h3.bridge-title {}
 
 
 .catalog-list .catalog-item:nth-child(2) {
-  padding: 30px 73px 30px 72px;
+  padding: 30px 73px 30px 73px;
 }
 
 .catalog-list .catalog-item:nth-child(3) {
-  padding: 30px 73px 30px 72px;
+  padding: 30px 73px 30px 73px;
 }
 
 .info {
@@ -1644,12 +1653,15 @@ h3.bridge-title {}
 .rating {
   position: relative;
   top: 63px;
-  width: 109px;
+  width: 110px;
   height: 20px;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 4px 0px 4px 0px;
+  /* text-align: center; */
+  padding: 4px 0px 3px 0px;
   margin-top: auto;
+  /* margin-left: -1px; */
   margin-bottom: 0px;
   background-color: var(--basic-light-silver);
   color: var(--basic-dark-grey);
@@ -1658,20 +1670,22 @@ h3.bridge-title {}
 .rating-stars.hotel-first {
   top: 73px;
   position: absolute;
-  top: -2px;
-  left: 17px;
+  top: -1px;
+  left: 21px;
   display: flex;
 }
 
 .rating-stars.hotel-second {
   position: absolute;
-  left: 43px;
+  left: 46px;
+  top: -2px;
   display: flex;
 }
 
 .rating-stars.hotel-third {
   position: absolute;
-  left: 67px;
+  left: 70px;
+  top: -1px;
   display: flex;
 }
 
