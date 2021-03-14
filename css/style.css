@@ -923,7 +923,6 @@ img {
   border: none;
 }
 
-
 /* Main footer */
 
 .main-footer {
@@ -945,7 +944,7 @@ img {
   line-height: 27px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding-top: 26px;
+  padding-top: 21px;
   padding-right: 139px;
   padding-bottom: 36px;
   padding-left: 111px;
@@ -964,7 +963,7 @@ img {
 }
 
 .hashtag {
-  margin-top: -13px;
+  margin-top: -1px;
   margin-right: 13px;
   margin-bottom: 5px;
   margin-left: -58px;
@@ -984,7 +983,7 @@ img {
 /* Scoial button */
 
 .footer-social {
-  margin: 9px 0px 0px 33px;
+  margin: 15px 0px 0px 35px;
   text-align: center;
   list-style: none;
   justify-content: center;
@@ -1041,7 +1040,7 @@ img {
 }
 
 .footer-copyright-introduction {
-  margin-top: 22px;
+  margin-top: 27px;
   margin-right: 6px;
   margin-bottom: 0px;
   margin-left: 121px;
